@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devhou.se</title>
+    <style>
+        /* Global Styles to Reset Default Margins and Center Everything */
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Arial Black", Arial, sans-serif;
+        }
+
+        a, a:hover, a:focus, a:visited {
+            text-decoration: none; /* Removes the underline */
+            color: inherit;        /* Makes the link color inherit from its parent element */
+        }
+
+        .center-box {
+            padding: 20px;
+            border: 2px solid black;
+            text-align: center;
+            background-color: #f2f2f2;
+            font-size: 2em;
+            border-radius: 3px;
+        }
+
+        .center-box .hide {
+            font-size: 0;
+            transition: 0.25s ease font-size;
+        }
+
+        .center-box:hover .hide {
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+<div class="center-box">
+    <a href="/">dev<span style="color:#c41818;">hou<span class="hide">.</span>se</span></a>
+</div>
+</body>
+</html>
