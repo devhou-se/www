@@ -2,48 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>devhou.se</title>
+    <title>Dev House - Bali Edition</title>
     <style>
-        /* Global Styles to Reset Default Margins and Center Everything */
-        html, body {
+        /* General Styles */
+        body, html {
+            height: 100vh;
             margin: 0;
             padding: 0;
-            height: 100%;
-            display: flex;
-            justify-content: center;
+            width: 100vw;
+        }
+
+        body {
             align-items: center;
-            font-family: "Arial Black", Arial, sans-serif;
+            display: flex;
+            font-family: "Arial Black", sans-serif;
+            justify-content: center;
         }
 
-        a, a:hover, a:focus, a:visited {
-            text-decoration: none; /* Removes the underline */
-            color: inherit;        /* Makes the link color inherit from its parent element */
-        }
-
-        .center-box {
-            padding: 20px;
-            border: 2px solid black;
+        /* Main Content Styles */
+        .main-content {
             text-align: center;
-            background-color: #f2f2f2;
-            font-size: 2em;
-            border-radius: 3px;
         }
 
-        .center-box .hide {
-            font-size: 0;
-            transition: 0.25s ease font-size;
+        .main-content h1 {
+            color: #3ea8a8;
+            font-size: 4em;
+            margin: 10px 0;
         }
 
-        .center-box:hover .hide {
-            font-size: 1em;
+        .main-content h2 {
+            color: white;
+            font-size: 3em;
+            margin: 10px 0;
+        }
+
+        .main-content img {
+            border: 3px solid black;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 50%) 0 10px 20px 5px;
+            max-height: 65vh;
+            max-width: 90vw;
+            /*width: 1024px;*/
+        }
+
+        /* Main Background Style */
+        .main-background {
+            background-color: #3ea8a8;
+            display: inline-block;
+            height: 50vh;
+            width: 100vw;
+            position: absolute;
+            top: 50vh;
+            z-index: -10;
         }
     </style>
 </head>
 <body>
-<div class="center-box">
-    <a href="/">dev<span style="color:#c41818;">hou<span class="hide">.</span>se</span></a>
+
+<!-- Main Background -->
+<div class="main-background"></div>
+
+<!-- Main Content -->
+<div class="main-content">
+    <h1>Dev House</h1>
+    <img src="assets/hero.png">
+    <h2>Bali Edition</h2>
 </div>
+
 </body>
 </html>
