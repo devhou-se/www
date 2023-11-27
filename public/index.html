@@ -3,58 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev House - Bali Edition</title>
+    <title>devhou.se - Tokyo Edition</title>
     <style>
         /* General Styles */
         body, html {
-            height: 100vh;
+            height: 100dvh;
             margin: 0;
             padding: 0;
-            width: 100vw;
+            width: 100dvw;
         }
 
-        body {
-            align-items: center;
-            display: flex;
-            font-family: "Arial Black", sans-serif;
-            justify-content: center;
-        }
-
-        /* Main Content Styles */
-        .main-content {
-            text-align: center;
-        }
-
-        .main-content h1 {
-            color: #3ea8a8;
-            font-size: 4em;
-            margin: 10px 0;
-        }
-
-        .main-content h2 {
-            color: white;
-            font-size: 3em;
-            margin: 10px 0;
-        }
-
-        .main-content img {
-            border: 3px solid black;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 50%) 0 10px 20px 5px;
-            max-height: 65vh;
-            max-width: 90vw;
-            /*width: 1024px;*/
-        }
-
-        /* Main Background Style */
+        /* Background Styles */
         .main-background {
-            background-color: #3ea8a8;
-            display: inline-block;
-            height: 50vh;
-            width: 100vw;
+            background-image: url("assets/hero-tokyo.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100dvh;
+            width: 100dvw;
+        }
+
+        /* Main Heading Styles */
+        .main-heading {
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            color: #114a7b;
+            font-family: "Arial Black", Arial, sans-serif;
+            font-size: 3em;
+            margin: 0;
+            padding: 30px 80px;
             position: absolute;
-            top: 50vh;
-            z-index: -10;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
@@ -63,12 +45,8 @@
 <!-- Main Background -->
 <div class="main-background"></div>
 
-<!-- Main Content -->
-<div class="main-content">
-    <h1>Dev House</h1>
-    <img src="assets/hero.png">
-    <h2>Bali Edition</h2>
-</div>
+<!-- Main Heading -->
+<h1 class="main-heading">Tokyo Edition</h1>
 
 </body>
 </html>
